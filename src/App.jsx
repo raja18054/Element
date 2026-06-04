@@ -361,3 +361,29 @@ function Footer(){
     </footer>
   );
 }
+export default function App(){
+  const [sc,setSc]=useState(false);
+  useEffect(()=>{
+    const s=document.createElement("style");
+    s.textContent=css;
+    document.head.appendChild(s);
+    return()=>document.head.removeChild(s);
+  },[]);
+  useEffect(()=>{
+    const fn=()=>setSc(window.scrollY>20);
+    window.addEventListener("scroll",fn);
+    return()=>window.removeEventListener("scroll",fn);
+  },[]);
+  return(
+    <>
+      <Navbar sc={sc}/>
+      <Hero/>
+      <About/>
+      <Progress/>
+      <Services/>
+      <Testimonials/>
+      <Newsletter/>
+      <Footer/>
+    </>
+  );
+}
