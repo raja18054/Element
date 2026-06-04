@@ -335,19 +335,29 @@ function Footer(){
       <div className="fg">
         <div className="fc">
           <div className="br">elementum</div>
-          <p className="bs">Building tomorrow's<br/>solutions today.<br/><br/>Where thinkers meet doers.</p>
+          <p className="bs">Building tomorrows solutions today. Where thinkers meet doers.</p>
         </div>
         <div className="fc">
           <h4>Company</h4>
           <ul>{["Home","About Us","Services","Career","Blog","Awards"].map(l=><li key={l}><a href="#">{l}</a></li>)}</ul>
         </div>
         <div className="fc">
-          <h4>Terms &amp; Policies</h4>
+          <h4>Terms and Policies</h4>
           <ul>{["Privacy Policy","Cookie Policy","Terms of Use","Accessibility"].map(l=><li key={l}><a href="#">{l}</a></li>)}</ul>
           <br/>
           <h4>Follow Us</h4>
-          <ul>{["Instagram","LinkedIn","Twitter / X","YouTube"].map(l=><li key={l}><a href="#">{l}</a></li>)}</ul>
+          <ul>{["Instagram","LinkedIn","Twitter","YouTube"].map(l=><li key={l}><a href="#">{l}</a></li>)}</ul>
         </div>
         <div className="fc fct">
           <h4>Contact</h4>
-          <p><strong>Office Address</strong><br/>45 Design St
+          <p><strong>Address</strong><br/>45 Design Street, New York</p>
+          <p><strong>Email</strong><br/>hello@elementum.com</p>
+        </div>
+      </div>
+      <div className="fb">
+        <span>2025 Elementum. All rights reserved.</span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+  );
+}
